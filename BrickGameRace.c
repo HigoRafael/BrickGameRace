@@ -404,9 +404,9 @@ void intro()
     printf("\n\n");
     printf("\n               Bem-vindo\n");
     printf("\n                  ao\n");
-    printf("\n                 Game\n");
+    printf("\n                 Jogo\n");
     printf("\n\n");
-    printf("\n       Controls : '<--', '-->t'\n");
+    printf("\n       Controles : '<--' '-->'\n");
     printf("\n\n\n");
     printf("\n");
     printf("\n     Pressione Uma Tecla Para Iniciar...");
@@ -420,15 +420,15 @@ void outro()
     printf("\n               BRICK GAME\n");
     printf("\n\n\n");
     if (win_status == TRUE)
-        printf("\n             *** WINNER ***\n");
+        printf("\n             *** VENCEDOR ***\n");
     else
         printf("\n           --- FIM DE JOGO ---\n");
     printf("\n\n");
-    printf("\n                     Obrigado\n");
-    printf("\n                      Por\n");
-    printf("\n                      Jogar\n");
+    printf("\n                Obrigado\n");
+    printf("\n                  Por\n");
+    printf("\n                 Jogar\n");
     printf("\n\n");
-    printf("\n               Pontuação = %lu\n", score);
+    printf("\n               Pontuacao = %lu\n", score);
     printf("\n\n\n");
     printf("\n");
     printf("\n        Pressione Uma Tecla Para Sair...");
@@ -465,7 +465,7 @@ void render()
 
 int main()
 {
-    SetConsoleTitle("C - Brick Game Race v1.0");
+    SetConsoleTitle("C - Brick Game Race");
     set_window_size(WINDOW_X, WINDOW_Y);
     set_cursor_visibility(TRUE);
     srand(time(NULL));
